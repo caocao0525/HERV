@@ -1,0 +1,45 @@
+name: herv
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # Core
+  - numpy~=2.0
+  - pandas~=2.2
+  - matplotlib~=3.10
+  - seaborn~=0.13
+  - scipy~=1.14
+  - scikit-learn~=1.6
+  - statsmodels~=0.14
+
+  # ML / embeddings / clustering
+  - umap-learn~=0.5
+  - tslearn~=0.6
+
+  # Bio / sequence
+  - biopython
+
+  # Visualization / utilities
+  - networkx~=3.4
+  - tqdm~=4.67
+  - wordcloud~=1.9
+  - logomaker~=0.8
+
+  # Notebook
+  - notebook
+  - ipywidgets
+
+  # IO / misc
+  - h5py
+
+  # pip-only packages
+  - pip
+  - pip:
+      - seqeval~=1.2
+      - pyahocorasick
+      - sentencepiece~=0.1.99
+      - tensorboardX
